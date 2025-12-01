@@ -1,0 +1,526 @@
+html {
+    height: 100%;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #C8B6C6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.hero-wrapper {
+    background-image: url(../images/wickedbackground.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.name {
+    font-size: 20px;
+    color: #f1f1f1;
+    font-weight: 600;
+    margin: 0;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin: 0;
+    border-radius: 50%;
+}
+
+main {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: max(8.79vw, 110px);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-h1 {
+    font-size: max(2.64vw, 32px);
+    font-weight: 800;
+    color: #3F4327;
+    text-align: center;
+}
+
+.hero-p {
+    font-size: max(1.76vw, 22px);
+    font-weight: 600;
+    text-align: center;
+    color: #3F4327;
+    width: 70%;
+}
+
+.CTA {
+    font-size: max(2.34vw, 28px);
+    font-weight: 800;
+    text-decoration: none;
+    color: #3F4327;
+    background-color: #f1f1f1;
+    width: max(18.31vw, 235px);
+    height: max(5.86vw, 75px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+}
+
+.CTA:hover {
+    background-color: #dbd0d0;
+}
+
+.products {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.product {
+    width: 19%;
+    height: max(43.91vw, 500px);
+    background-color: #f1f1f1;
+    padding: 1.46vw;
+    box-shadow: 0 4px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.swiper {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000;
+    display: none !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: #000;
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+h3 {
+    margin: 5px;
+    font-size: max(1.61vw, 18px);
+    color: #3F4327;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-price {
+    margin: 0;
+    font-size: max(1.76vw, 20px);
+    font-weight: 800;
+    color: #270722;
+}
+
+.product-p {
+    text-align: center;
+    font-size: max(1.02vw, 12px);
+    margin-top: 5px;
+    font-weight: 600;
+    color: #3F4327;
+}
+
+.product-notes {
+    text-align: center;
+}
+
+.products-note {
+    display: inline-block;
+    margin: 40px auto 0;
+    padding: 10px;
+    text-align: center;
+    font-size: max(2.34vw, 26px);
+    font-weight: 800;
+    color: #3F4327;
+    background-color: #f1f1f1;
+    border-radius: 3rem;
+}
+
+.products-note span {
+    color: #270722;
+}
+
+.product-note2 {
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: max(1.9vw, 22px);
+    font-weight: 800;
+    color: #3F4327;
+}
+
+.top {
+    color: #3F4327;
+    margin: 60px 0;
+    font-size: max(2.34vw, 26px);
+    font-weight: 800;
+    text-align: center;
+}
+
+.delivery {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.delivery-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.smsa {
+    width: max(16.47vw, 160px);
+}
+
+.redbox {
+    width: max(28.53vw, 330px);
+}
+
+.delivery-p {
+    text-align: center;
+    font-size: max(1.9vw, 22px);
+    color: #3F4327;
+    font-weight: 600;
+}
+
+footer {
+    height: max(18.29vw, 210px);
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.social img {
+    width: max(5.12vw, 60px);
+}
+
+.social a {
+    transition: transform 0.3s ease;
+}
+
+.social a:hover {
+    transform: scale(1.1);
+}
+
+.prove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prove img {
+    width: max(7.32vw, 90px);
+}
+
+.prove-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.prove-head {
+    margin: 0;
+    font-size: max(1.46vw, 18px);
+    font-weight: 600;
+    color: #270722;
+}
+
+.prove-p {
+    margin: 0;
+    font-size: max(1.46vw, 18px);
+    font-weight: 800;
+    color: #270722;
+}
+
+h5 {
+    text-align: center;
+    font-size: max(1.17vw, 14px);
+    color: #3F4327;
+    margin: 5px;
+}
+
+@media (max-width: 1024px) and (min-height: 720px) {
+    header {
+        padding: 20px 30px;
+    }
+
+    .name {
+        font-size: 2.7vw;
+    }
+
+    .logo {
+        width: 8vw;
+    }
+
+    main {
+        margin-top: 12vh;
+    }
+
+    .hero-h1 {
+        font-size: 4vw;
+    }
+
+    .hero-p {
+        font-size: 3.5vw;
+    }
+
+    .CTA {
+        width: 36vw;
+        height: 12vw;
+        font-size: 4vw;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        gap: 20px;
+        margin: 50px auto;
+    }
+
+    .product {
+        width: 90%;
+        height: 99vw;
+    }
+
+    h3 {
+        font-size: 3.2vw;
+    }
+
+    .product-price {
+        font-size: 4vw;
+    }
+
+    .product-p {
+        font-size: 2vw;
+    }
+
+    .products-note {
+        font-size: 4vw;
+    }
+
+    .product-note2 {
+        font-size: 3vw;
+    }
+
+    .top {
+        font-size: 5vw;
+    }
+
+    .smsa {
+        width: 25vw;
+    }
+
+    .redbox {
+        width: 40vw;
+    }
+
+    .delivery-p {
+        font-size: 3.2vw;
+    }
+
+    footer {
+        height: 39vw;
+    }
+
+    .social img {
+        width: 10vw;
+    }
+
+    .prove img {
+        width: 18vw;
+    }
+
+    .prove-head {
+        font-size: 3.2vw;
+    }
+
+    .prove-p {
+        font-size: 3.6vw;
+    }
+
+    h5 {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .name {
+        font-size: 4.6vw;
+    }
+
+    .logo {
+        width: 12vw;
+    }
+
+    .hero-h1 {
+        font-size: 6.5vw;
+    }
+
+    .hero-p {
+        font-size: 4.8vw;
+    }
+
+    .CTA {
+        width: 50vw;
+        height: 17vw;
+        font-size: 6.8vw;
+    }
+
+    .products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: auto;
+    }
+
+    .product {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between !important;
+        width: 95%;
+        height: fit-content;
+        border-radius: 2rem;
+    }
+
+    .product-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper {
+        width: 33%;
+        margin: 0 !important;
+        padding: 0;
+    }
+
+    .swiper-slide img {
+        border-radius: 2rem;
+    }
+
+    h3 {
+        font-size: 6vw;
+    }
+
+    .product-price {
+        font-size: 7vw;
+    }
+
+    .product-p {
+        font-size: 3.8vw;
+        width: 90%;
+    }
+
+    .products-note {
+        font-size: 4.5vw;
+    }
+
+    .product-note2 {
+        font-size: 4.2vw;
+    }
+
+    .top {
+        font-size: 8vw;
+    }
+
+    .smsa {
+        width: 25vw;
+    }
+
+    .redbox {
+        width: 35vw;
+    }
+
+    .delivery-p {
+        font-size: 4.2vw;
+        width: 80%;
+    }
+
+    .social img {
+        width: 13vw;
+    }
+
+    .prove img {
+        width: 25vw;
+    }
+
+    .prove-head {
+        font-size: 4vw;
+    }
+
+    .prove-p {
+        font-size: 4.4vw;
+    }
+
+    h5 {
+        font-size: 3vw;
+    }
+}
