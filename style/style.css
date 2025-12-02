@@ -143,6 +143,7 @@ h3 {
     margin: 5px;
     font-size: max(1.61vw, 18px);
     color: #3F4327;
+    text-align: center;
 }
 
 .product-details {
@@ -523,4 +524,5 @@ h5 {
     h5 {
         font-size: 3vw;
     }
+
 }
