@@ -408,7 +408,7 @@ h5 {
     }
 
     header {
-        padding: 1.2vw;
+        padding: 2vw;
     }
 
     .name {
@@ -425,12 +425,13 @@ h5 {
     }
 
     .hero-p {
-        font-size: 3vw;
+        font-size: 4vw;
         width: 80%;
     }
 
     .CTA {
         font-size: 5vw;
+        width: 40%;
         padding: 3vw;
     }
 
