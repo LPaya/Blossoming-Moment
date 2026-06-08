@@ -18,7 +18,532 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-0JLSGRF20L');
+  gtag('config', 'G-0JLSGRF20L');html {
+    height: 100%;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #ad96ac;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.hero-wrapper {
+    background-image: url(../images/wickedbackground.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+
+header {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.name {
+    font-size: 1.2vw;
+    color: #f1f1f1;
+    font-weight: 600;
+    margin: 0;
+}
+
+.logo {
+    width: 3vw;
+    height: auto;
+    margin: 0;
+    border-radius: 50%;
+}
+
+main {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-h1 {
+    font-size: 2.2vw;
+    font-weight: 800;
+    color: #3F4327;
+    text-align: center;
+}
+
+.hero-p {
+    font-size: 1.4vw;
+    font-weight: 600;
+    text-align: center;
+    color: #3F4327;
+    width: 70%;
+}
+
+.CTA {
+    font-size: 2vw;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 1vw;
+    color: #3F4327;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+}
+
+.CTA:hover {
+    background-color: #dbd0d0;
+}
+
+.products {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+}
+
+.product {
+    width: 15%;
+    background-color: #f1f1f1;
+    padding: 1.46vw;
+    box-shadow: 0 4px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+.swiper {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000;
+    display: none !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: #000;
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+h3 {
+    margin: 5px;
+    font-size: 1.4vw;
+    color: #3F4327;
+    text-align: center;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-price {
+    margin: 0;
+    font-size: 1.5vw;
+    font-weight: 800;
+    color: #270722;
+}
+
+.product-p {
+    text-align: center;
+    font-size: 0.75vw;
+    margin-top: 5px;
+    font-weight: 600;
+    color: #3F4327;
+}
+
+.product-notes {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products-note {
+    display: inline-block;
+    margin: 1vw;
+    padding: 0.5vw;
+    text-align: center;
+    font-size: 1.6vw;
+    font-weight: 800;
+    color: #3F4327;
+    background-color: #f1f1f1;
+    border-radius: 3rem;
+}
+
+.products-note span {
+    color: #270722;
+}
+
+.product-note2 {
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 800;
+    color: #3F4327;
+}
+
+.top {
+    color: #3F4327;
+    margin: 5vh;
+    font-size: 2vw;
+    font-weight: 800;
+    text-align: center;
+}
+
+.delivery {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2vh;
+    width: 100%;
+}
+
+.delivery-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw
+    ;
+    width: 100%;
+}
+
+.smsa {
+    width: 10vw;
+    border-radius: 1em;
+}
+
+.delivery-p {
+    text-align: center;
+    font-size: max(1.9vw, 22px);
+    color: #3F4327;
+    font-weight: 600;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.social img {
+    width: 3.5vw;
+}
+
+.social a {
+    transition: transform 0.3s ease;
+}
+
+.social a:hover {
+    transform: scale(1.1);
+}
+
+.prove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prove img {
+    width: 6vw;
+}
+
+.prove-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.prove-head {
+    margin: 0;
+    font-size: 1vw;
+    font-weight: 600;
+    color: #270722;
+}
+
+.prove-p {
+    margin: 0;
+    font-size: 1.2vw;
+    font-weight: 800;
+    color: #270722;
+}
+
+h5 {
+    text-align: center;
+    font-size: 0.8vw;
+    color: #3F4327;
+    margin: 0.2vw;
+}
+
+@media (max-width: 1024px) and (min-height: 720px) {
+    header {
+        padding: 1vw;
+    }
+
+    .name {
+        font-size: 2.7vw;
+    }
+
+    .logo {
+        width: 8vw;
+    }
+
+    main {
+        margin-top: 1vh;
+    }
+
+    .hero-h1 {
+        font-size: 3.5vw;
+    }
+
+    .hero-p {
+        font-size: 3vw;
+    }
+
+    .CTA {
+        padding: 2.5vw;
+        font-size: 5vw;
+    }
+
+    .product {
+        width: 18%;
+    }
+
+    h3 {
+        font-size: 2.5vw;
+    }
+
+    .product-price {
+        font-size: 3vw;
+    }
+
+    .product-p {
+        font-size: 1.5vw;
+    }
+
+    .products-note {
+        font-size: 3vw;
+        padding: 1vw;
+    }
+
+    .product-note2 {
+        font-size: 2.5vw;
+    }
+
+    .top {
+        font-size: 4vw;
+    }
+
+    .smsa {
+        width: 25vw;
+    }
+
+    .redbox {
+        width: 40vw;
+    }
+
+    .delivery-p {
+        font-size: 3.2vw;
+    }
+
+    footer {
+        height: 39vw;
+    }
+
+    .social img {
+        width: 10vw;
+    }
+
+    .prove img {
+        width: 18vw;
+    }
+
+    .prove-head {
+        font-size: 3.2vw;
+    }
+
+    .prove-p {
+        font-size: 3.6vw;
+    }
+
+    h5 {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-color: #d6c7d3;
+    }
+
+    .hero-wrapper {
+        height: 55vh;
+    }
+
+    header {
+        padding: 2vw;
+    }
+
+    .name {
+        font-size: 4vw;
+    }
+
+    .logo {
+        width: 10vw;
+    }
+
+    .hero-h1 {
+        font-size: 5.5vw;
+        width: 90%;
+    }
+
+    .hero-p {
+        font-size: 4vw;
+        width: 80%;
+    }
+
+    .CTA {
+        font-size: 5vw;
+        width: 40%;
+        padding: 3vw;
+    }
+
+    .products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        margin: auto auto 2vh ;
+    }
+
+    .product {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between !important;
+        width: 95%;
+        border-radius: 2rem;
+    }
+
+    .product-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper {
+        width: 25%;
+        margin: 0 !important;
+        padding: 0;
+    }
+
+    .swiper-slide img {
+        border-radius: 2rem;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    .product-price {
+        font-size: 5vw;
+    }
+
+    .product-p {
+        font-size: 3vw;
+        width: 90%;
+    }
+
+    .products-note {
+        font-size: 3.5vw;
+    }
+
+    .product-note2 {
+        font-size: 4vw;
+    }
+
+    .top {
+        font-size: 5vw;
+        margin: 3vh auto 2vh;
+    }
+
+    .smsa {
+        width: 25vw;
+    }
+
+    .delivery-p {
+        font-size: 3.8vw;
+        width: 50%;
+    }
+
+    .social img {
+        width: 13vw;
+    }
+
+    .prove img {
+        width: 25vw;
+    }
+
+    .prove-head {
+        font-size: 4vw;
+    }
+
+    .prove-p {
+        font-size: 4.4vw;
+    }
+
+    h5 {
+        font-size: 3vw;
+    }
+
+}
 </script>
 </head>
 <body>
